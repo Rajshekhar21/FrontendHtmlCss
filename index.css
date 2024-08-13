@@ -1,0 +1,223 @@
+/* Global Styles */
+body {
+  background: #0f1320;
+  font-family: 'Century Gothic', sans-serif;
+}
+
+section {
+  padding: 20px 50px;
+}
+
+/* Cards Section */
+.cards-div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-box {
+  width: 300px;
+}
+
+.circle-outer {
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle-text {
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.total-circle-box {
+  display: flex;
+  align-items: flex-end;
+}
+
+.circle-point {
+  height: 12px;
+  width: 12px;
+  background: white;
+  border-radius: 50%;
+}
+
+.circle-year {
+  margin-top: 5px;
+  font-size: medium;
+  font-weight: 600;
+  color: white;
+}
+
+.outer-circle-div {
+  margin: 20px 20px;
+  height: 10px;
+}
+
+/* Box Shadows for Circles */
+.box-shadow-green {
+  box-shadow: 5px 10px 20px 20px #22a75e21;
+}
+
+.box-shadow-blue {
+  box-shadow: 5px 10px 20px 20px #2278d41e;
+}
+
+.box-shadow-yellow {
+  box-shadow: 5px 10px 20px 20px #ffd0001c;
+}
+
+.box-shadow-red {
+  box-shadow: 5px 10px 20px 20px #e207164c;
+}
+
+/* List Box */
+.list-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.list-div {
+  padding-top: 20px;
+}
+
+.list-text {
+  color: rgba(245, 245, 245, 0.684);
+  font-weight: lighter;
+}
+
+/* Colors */
+.color-green {
+  background-color: #22a75d;
+}
+
+.color-blue {
+  background-color: #2278d4;
+}
+
+.color-yellow {
+  background-color: #ffd100;
+}
+
+.color-red {
+  background-color: #e20714;
+}
+
+.color-green-text {
+  color: #22a75d;
+}
+
+.color-blue-text {
+  color: #2278d4;
+}
+
+.color-yellow-text {
+  color: #ffd100;
+}
+
+.color-red-text {
+  color: #e20714;
+}
+
+/* About Section */
+.title-div {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 30px;
+  margin-right: 20px;
+}
+
+.about-header {
+  color: white;
+  font-size: 1.5em;
+}
+
+.about-text {
+  color: white;
+}
+
+.about-text-bold {
+  font-size: 15px;
+  font-weight: lighter;
+  color: rgba(241, 241, 241, 0.877);
+}
+
+.about-text-light {
+  font-size: 15px;
+  font-weight: lighter;
+  color: rgba(241, 241, 241, 0.641);
+}
+
+.main-about {
+  display: flex;
+  width: 100%;
+}
+
+.left-about {
+  margin: 50px;
+  width: 50%;
+}
+
+.right-about {
+  background: linear-gradient(to bottom, #acbeff, #023aff);
+  border-radius: 40px;
+  height: 600px;
+  min-width: 50%;
+}
+
+.about-image {
+  min-height: 200px;
+  max-height: 100%;
+  margin-left: -50px;
+}
+
+.read-more {
+  border: 2px solid #22a75d;
+  color: white;
+  background: transparent;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 700px) {
+  .cards-div {
+    flex-direction: column;
+  }
+
+  .card-box {
+    margin-top: 50px;
+  }
+
+  .left-about {
+    display: none;
+  }
+
+  .right-about {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .card-box:nth-child(1) {
+    order: 2;
+  }
+
+  .card-box:nth-child(2) {
+    order: 1;
+  }
+
+  .card-box:nth-child(3) {
+    order: 4;
+  }
+
+  .card-box:nth-child(4) {
+    order: 3;
+  }
+}
